@@ -1,0 +1,109 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.youtube.com/oembed?url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Db9XsTtFu64Y&format=json
+    body: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Oembedr Gem 0.0.1
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      Date:
+      - Tue, 17 Jan 2012 21:08:22 GMT
+      Server:
+      - Apache
+      X-Content-Type-Options:
+      - nosniff
+      Expires:
+      - Tue, 27 Apr 1971 19:44:06 EST
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+    body: ! '{"provider_url": "http:\/\/www.youtube.com\/", "title": "Dead Prez -
+      Turn Off The Radio @ Dave Chappelle''s Block Party", "html": "\u003ciframe width=\"480\"
+      height=\"270\" src=\"http:\/\/www.youtube.com\/embed\/b9XsTtFu64Y?fs=1\u0026feature=oembed\"
+      frameborder=\"0\" allowfullscreen\u003e\u003c\/iframe\u003e", "author_name":
+      "InfamousBIG", "height": 270, "thumbnail_width": 480, "width": 480, "version":
+      "1.0", "author_url": "http:\/\/www.youtube.com\/user\/InfamousBIG", "provider_name":
+      "YouTube", "thumbnail_url": "http:\/\/i3.ytimg.com\/vi\/b9XsTtFu64Y\/hqdefault.jpg",
+      "type": "video", "thumbnail_height": 360}'
+    http_version: 
+  recorded_at: Tue, 17 Jan 2012 21:08:21 GMT
+- request:
+    method: get
+    uri: http://www.youtube.com/oembed?url=http%3A%2F%2Fwww.youtube.com%2Ffoobar%3Fqq%3D12314332&format=json
+    body: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Oembedr Gem 0.0.1
+  response:
+    status:
+      code: 404
+      message: 
+    headers:
+      Date:
+      - Tue, 17 Jan 2012 21:08:22 GMT
+      Server:
+      - Apache
+      X-Content-Type-Options:
+      - nosniff
+      Expires:
+      - Tue, 27 Apr 1971 19:44:06 EST
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+    body: 404 Not Found
+    http_version: 
+  recorded_at: Tue, 17 Jan 2012 21:08:21 GMT
+- request:
+    method: get
+    uri: http://www.youtube.com/oembed?maxwidth=150&maxheight=100&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DQi_AAqi0RZM&format=json
+    body: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Oembedr Gem 0.0.1
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      Date:
+      - Tue, 17 Jan 2012 21:08:22 GMT
+      Server:
+      - Apache
+      X-Content-Type-Options:
+      - nosniff
+      Expires:
+      - Tue, 27 Apr 1971 19:44:06 EST
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+    body: ! '{"provider_url": "http:\/\/www.youtube.com\/", "title": "Twilio''s definitive
+      brogramming primer", "html": "\u003ciframe width=\"133\" height=\"100\" src=\"http:\/\/www.youtube.com\/embed\/Qi_AAqi0RZM?fs=1\u0026feature=oembed\"
+      frameborder=\"0\" allowfullscreen\u003e\u003c\/iframe\u003e", "author_name":
+      "TeamTwilio", "height": 100, "thumbnail_width": 480, "width": 133, "version":
+      "1.0", "author_url": "http:\/\/www.youtube.com\/user\/TeamTwilio", "provider_name":
+      "YouTube", "thumbnail_url": "http:\/\/i2.ytimg.com\/vi\/Qi_AAqi0RZM\/hqdefault.jpg",
+      "type": "video", "thumbnail_height": 360}'
+    http_version: 
+  recorded_at: Tue, 17 Jan 2012 21:08:21 GMT
+recorded_with: VCR 2.0.0.rc1
