@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = Oembedr::VERSION
   s.authors     = ["Matt Wilson"]
   s.email       = ["mhw@hypomodern.com"]
-  s.homepage    = ""
+  s.homepage    = "https://github.com/agoragames/oembedr"
   s.summary     = %q{Lightweight, Flexible OEmbed Consumer Library}
   s.description = %q{oembedr aims to make consuming oembed resources easy}
 
