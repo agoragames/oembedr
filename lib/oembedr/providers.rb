@@ -3,7 +3,7 @@ module Oembedr
 
     # from ruby-oembed with a couple more I know of from user feedback :).
     LIST = {
-      /(yotu\.be|youtube)/ => "http://www.youtube.com/oembed",
+      /(youtu\.be|youtube)/ => "http://www.youtube.com/oembed",
       /(flic\.kr|flickr)/ => "http://www.flickr.com/services/oembed/",
       /viddler/ => "http://lab.viddler.com/services/oembed/",
       /qik/ => "http://qik.com/api/oembed.{format}",
@@ -29,7 +29,7 @@ module Oembedr
     # @return the url, or false if no known endpoint.
     def service_endpoint url
       endpoint = LIST.find do |(pattern, endpoint)|
-        pattern.match(url)
+        url =~ pattern
       end
       endpoint ? endpoint.last : false
     end

@@ -23,7 +23,9 @@ module Oembedr
     context "testing ALL THE THINGS" do
       {
         "http://www.youtube.com/watch?v=b9XsTtFu64Y" => "http://www.youtube.com/oembed",
+        "http://youtu.be/b9XsTtFu64Y" => "http://www.youtube.com/oembed",
         "http://www.flickr.com/photos/puzzlemaster/6693154925/in/photostream" => "http://www.flickr.com/services/oembed/",
+        "http://www.flic.kr/6693154925" => "http://www.flickr.com/services/oembed/",
         "http://www.viddler.com/v/a802f490" => "http://lab.viddler.com/services/oembed/",
         "http://qik.com/video/15944" => "http://qik.com/api/oembed.{format}",
         "http://revision3.com/tbhs/holidaycontroller" => "http://revision3.com/api/oembed/",

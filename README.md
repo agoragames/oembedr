@@ -23,9 +23,22 @@ Make consuming oembed from **any source** simple and easy. Uses fast http and fa
 *N.B.* XML is not supported yet. I've no idea why you might **need** it, but it's on the todo list :).
 
 ```ruby
-response = OEmbedr.fetch("http://www.youtube.com/watch?v=BxhqVrbixZc")
+response = Oembedr.fetch("http://www.youtube.com/watch?v=BxhqVrbixZc")
 response.body # => { "type" => "video", ... }
 # Now you can do whatever you want!
+
+# To customize your query:
+Oembedr.fetch("http://www.youtu.be/BxhqVrbixZc", :params => { :maxwidth => 320 })
+Oembedr.fetch("http://custom.com/23423423", :headers => {
+  "Accept" => "application/vnd.ms-excel",
+  "User-Agent" => "Windows Excel-Based Oembed Service"
+})
+```
+
+#### Other Methods
+
+```ruby
+Oembedr.known_service?("http://www.youtu.be/BxhqVrbixZc") # => true
 ```
 
 #### Configuration
@@ -50,6 +63,8 @@ Use a fast http library, like excon or typhoeus. Use yajl-ruby.
 * Commit and push until you are happy with your contribution
 * Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
 * Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
+
+A big thanks to everyone who [contributes](https://github.com/agoragames/oembedr/contributors)!
 
 ## Copyright
 
