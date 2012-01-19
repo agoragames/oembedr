@@ -2,6 +2,8 @@
 
 Lightweight, Flexible OEmbed Consumer Library.
 
+[![Build Status](https://secure.travis-ci.org/agoragames/oembedr.png)](http://travis-ci.org/agoragames/oembedr)
+
 ### Installation
 
 `gem install oembedr`
