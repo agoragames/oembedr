@@ -19,6 +19,12 @@ module Oembedr
       /skitch\.com/ => 'http://skitch.com/oembed',
       /twitch\.tv/ => false, # OMG! Support OEmbed!
       /twitter\.com/ => 'https://api.twitter.com/1/statuses/oembed.{format}',
+      /dailymotion\.com/ => 'http://www.dailymotion.com/api/oembed/',
+      /scribd\.com/ => 'http://www.scribd.com/services/oembed',
+      /dotsub\.com/ => 'http://dotsub.com/services/oembed',
+      /clikthrough\.com/ => 'http://clikthrough.com/services/oembed',
+      /kinomap\.com/ => 'http://www.kinomap.com/oembed',
+      /photobucket\.com/ => 'http://photobucket.com/oembed'
       # ...
     }
 

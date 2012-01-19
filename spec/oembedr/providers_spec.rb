@@ -39,7 +39,13 @@ module Oembedr
         "http://opera.com" => 'http://my.opera.com/service/oembed',
         "http://skitch.com/hannaolsen/rq33h/vday" => 'http://skitch.com/oembed',
         "http://www.twitch.tv/i_like_turtlez" => false, # OMG! Support OEmbed!
-        "https://twitter.com/hypomodern/status/158203918323695616" => 'https://api.twitter.com/1/statuses/oembed.{format}'
+        "https://twitter.com/hypomodern/status/158203918323695616" => 'https://api.twitter.com/1/statuses/oembed.{format}',
+        "http://www.dailymotion.com/video/x5ioet_phoenix-mars-lander_tech" => 'http://www.dailymotion.com/api/oembed/',
+        "http://www.scribd.com/doc/17896323/Indian-Automobile-industryPEST" => 'http://www.scribd.com/services/oembed',
+        "http://dotsub.com/view/10e3cb5e-96c7-4cfb-bcea-8ab11e04e090" => 'http://dotsub.com/services/oembed',
+        "http://www.clikthrough.com/theater/video/55" => 'http://clikthrough.com/services/oembed',
+        "http://www.kinomap.com/kms-vzkpc7" => 'http://www.kinomap.com/oembed',
+        "http://img.photobucket.com/albums/v211/JAV123/Michael%20Holland%20Candle%20Burning/_MG_5661.jpg" => 'http://photobucket.com/oembed'
       }.each do |(test_url, expected_value)|
         it "should match #{test_url} to #{expected_value}" do
           Oembedr.service_endpoint(test_url).should == expected_value
