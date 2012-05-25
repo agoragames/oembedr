@@ -24,7 +24,8 @@ module Oembedr
       /dotsub\.com/ => 'http://dotsub.com/services/oembed',
       /clikthrough\.com/ => 'http://clikthrough.com/services/oembed',
       /kinomap\.com/ => 'http://www.kinomap.com/oembed',
-      /photobucket\.com/ => 'http://photobucket.com/oembed'
+      /photobucket\.com/ => 'http://photobucket.com/oembed',
+      /speakerdeck\.com/ => 'https://speakerdeck.com/oembed.{format}'
       # ...
     }
 
