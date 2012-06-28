@@ -21,7 +21,6 @@ Gem::Specification.new do |s|
   # specify any dependencies here; for example:
   s.add_development_dependency "rspec"
   s.add_development_dependency "yajl-ruby"
-  s.add_development_dependency "typhoeus"
   s.add_development_dependency "vcr", "~> 2.0.0.rc1"
   s.add_development_dependency "fakeweb"
   s.add_development_dependency "guard"
@@ -31,4 +30,5 @@ Gem::Specification.new do |s|
   s.add_dependency "multi_json"
   s.add_dependency "faraday"
   s.add_dependency "faraday_middleware"
+  s.add_dependency "typhoeus"
 end
