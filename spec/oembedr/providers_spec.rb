@@ -46,7 +46,8 @@ module Oembedr
         "http://www.clikthrough.com/theater/video/55" => 'http://clikthrough.com/services/oembed',
         "http://www.kinomap.com/kms-vzkpc7" => 'http://www.kinomap.com/oembed',
         "http://img.photobucket.com/albums/v211/JAV123/Michael%20Holland%20Candle%20Burning/_MG_5661.jpg" => 'http://photobucket.com/oembed',
-        "https://speakerdeck.com/u/czarneckid/p/railsconf-2012-stack-smashing-cornflower-blue" => 'https://speakerdeck.com/oembed.{format}'
+        "https://speakerdeck.com/u/czarneckid/p/railsconf-2012-stack-smashing-cornflower-blue" => 'https://speakerdeck.com/oembed.{format}',
+        "http://soundcloud.com/cape910/17-cape-x-example-midnight-run" => 'http://soundcloud.com/oembed'
       }.each do |(test_url, expected_value)|
         it "should match #{test_url} to #{expected_value}" do
           Oembedr.service_endpoint(test_url).should == expected_value
