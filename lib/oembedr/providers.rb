@@ -25,7 +25,8 @@ module Oembedr
       /clikthrough\.com/ => 'http://clikthrough.com/services/oembed',
       /kinomap\.com/ => 'http://www.kinomap.com/oembed',
       /photobucket\.com/ => 'http://photobucket.com/oembed',
-      /speakerdeck\.com/ => 'https://speakerdeck.com/oembed.{format}'
+      /speakerdeck\.com/ => 'https://speakerdeck.com/oembed.{format}',
+      /soundcloud\.com/ => 'http://soundcloud.com/oembed'
       # ...
     }
 
