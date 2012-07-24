@@ -30,7 +30,7 @@ module Oembedr
         "http://qik.com/video/15944" => "http://qik.com/api/oembed.{format}",
         "http://revision3.com/tbhs/holidaycontroller" => "http://revision3.com/api/oembed/",
         "http://www.hulu.com/watch/319756/the-daily-show-with-jon-stewart-mon-jan-16-2012" => "http://www.hulu.com/api/oembed.{format}",
-        "http://vimeo.com/35055590" => "http://www.vimeo.com/api/oembed.{format}",
+        "http://vimeo.com/35055590" => "http://vimeo.com/api/oembed.{format}",
         "http://instagr.am/p/BUG/" => "http://api.instagram.com/oembed",
         "http://www.slideshare.net/alwynlau/martin-luther-king-jr-quote-presentation" => "http://www.slideshare.net/api/oembed/2",
         "http://tv.majorleaguegaming.com/videos/80344-the-year-in-starcraft-2" => "http://tv.majorleaguegaming.com/oembed",
