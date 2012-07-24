@@ -9,7 +9,7 @@ module Oembedr
       /qik/ => "http://qik.com/api/oembed.{format}",
       /revision3/ => "http://revision3.com/api/oembed/",
       /hulu/ => "http://www.hulu.com/api/oembed.{format}",
-      /vimeo/ => "http://www.vimeo.com/api/oembed.{format}",
+      /vimeo/ => "http://vimeo.com/api/oembed.{format}",
       /instagr.am/ => "http://api.instagram.com/oembed",
       /slideshare/ => "http://www.slideshare.net/api/oembed/2",
       /(mlg\.tv|tv\.majorleaguegaming)/ => "http://tv.majorleaguegaming.com/oembed",
