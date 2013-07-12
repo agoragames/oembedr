@@ -10,6 +10,7 @@ Gem::Specification.new do |s|
   s.homepage    = "https://github.com/agoragames/oembedr"
   s.summary     = %q{Lightweight, Flexible OEmbed Consumer Library}
   s.description = %q{oembedr aims to make consuming oembed resources easy}
+  s.license     = 'MIT'
 
   # s.rubyforge_project = "oembedr"
 
