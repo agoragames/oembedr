@@ -5,7 +5,8 @@ module Oembedr
 
     describe "#service_endpoint" do
       let(:test_url) { 'http://www.youtube.com/watch?v=b9XsTtFu64Y' }
-      subject(:endpoint) do
+
+      subject do
         Oembedr.service_endpoint(test_url)
       end
 
