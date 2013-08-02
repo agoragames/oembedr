@@ -21,7 +21,7 @@ module Oembedr
     describe "#known_service?" do
       let(:test_url) {}
 
-      subject { Oembedr.known_service?(test_url).should be_true }
+      subject { Oembedr.known_service?(test_url) }
 
       %w(
         http://www.youtube.com/watch?v=b9XsTtFu64Y
