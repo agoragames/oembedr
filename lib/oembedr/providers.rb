@@ -5,8 +5,8 @@ module Oembedr
     LIST = {
       # Video
       /(youtu\.be|youtube)/ => "http://www.youtube.com/oembed",
-      /viddler/ => "http://www.viddler.com/oembed/",
-      /qik/ => "http://qik.com/api/oembed.{format}",
+      /viddler\.com/ => "http://www.viddler.com/oembed/",
+      /qik\.com/ => "http://qik.com/api/oembed.{format}",
       /revision3/ => "http://revision3.com/api/oembed/",
       /hulu/ => "http://www.hulu.com/api/oembed.{format}",
       /vimeo/ => "http://vimeo.com/api/oembed.{format}",
@@ -33,12 +33,12 @@ module Oembedr
       /(deviantart\.com|fav\.me)/ => 'http://backend.deviantart.com/oembed',
       /(flic\.kr|flickr)/ => "http://www.flickr.com/services/oembed/",
       /(instagr\.am|instagram\.com)/ => "http://api.instagram.com/oembed",
-      /yfrog/ => "http://www.yfrog.com/api/oembed",
+      /yfrog\.com/ => "http://www.yfrog.com/api/oembed",
       /skitch\.com/ => 'http://skitch.com/oembed',
       /photobucket\.com/ => 'http://photobucket.com/oembed',
 
       # Rich
-      /slideshare/ => "http://www.slideshare.net/api/oembed/2",
+      /slideshare\.net/ => "http://www.slideshare.net/api/oembed/2",
       /twitter\.com/ => 'https://api.twitter.com/1/statuses/oembed.{format}',
       /scribd\.com/ => 'http://www.scribd.com/services/oembed',
       /kinomap\.com/ => 'http://www.kinomap.com/oembed',
