@@ -51,11 +51,19 @@ module Oembedr
       /dipity\.com/ => 'http://www.dipity.com/oembed/timeline/',
       /sketchfab\.com\/show/ => 'http://sketchfab.com/oembed',
       /ifixit\.com/ => 'http://www.ifixit.com/Embed',
+
+      # NOTE:
+      #   When calling Oembedr#fetch set the `for` parameter with your ID
+      #   Example: { :params => {:for => 'oembedr.com'} }
       /(wordpress\.com|blogs\.cnn\.com|techcrunch\.com|wp\.me)/ =>
         'http://public-api.wordpress.com/oembed/1.0/',
 
       # NoEmbed
-      /(thedailyshow\.com|funnyordie\.com|ted\.com|livejournal\.com|github\.com|metacafe\.com|wikipedia\.org|xkcd\.com|imdb\.com)/ => 'http://noembed.com/embed?nowrap=on'
+      # NOTE:
+      #   When calling Oembedr#fetch set the `nowrap` parameter to avoid
+      #   noembed.com wrapper
+      #   Example: { :params => {:nowrap => 'on'} }
+      /(thedailyshow\.com|funnyordie\.com|ted\.com|livejournal\.com|github\.com|metacafe\.com|wikipedia\.org|xkcd\.com|imdb\.com)/ => 'http://noembed.com/embed'
     }
 
     # Locate the correct service endpoint for the given resource URL.
