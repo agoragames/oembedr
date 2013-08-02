@@ -5,8 +5,8 @@ module Oembedr
     LIST = {
       # Video
       /(youtu\.be|youtube)/ => "http://www.youtube.com/oembed",
-      /viddler/ => "http://www.viddler.com/oembed/",
-      /qik/ => "http://qik.com/api/oembed.{format}",
+      /viddler\.com/ => "http://www.viddler.com/oembed/",
+      /qik\.com/ => "http://qik.com/api/oembed.{format}",
       /revision3/ => "http://revision3.com/api/oembed/",
       /hulu/ => "http://www.hulu.com/api/oembed.{format}",
       /vimeo/ => "http://vimeo.com/api/oembed.{format}",
@@ -33,12 +33,12 @@ module Oembedr
       /(deviantart\.com|fav\.me)/ => 'http://backend.deviantart.com/oembed',
       /(flic\.kr|flickr)/ => "http://www.flickr.com/services/oembed/",
       /(instagr\.am|instagram\.com)/ => "http://api.instagram.com/oembed",
-      /yfrog/ => "http://www.yfrog.com/api/oembed",
+      /yfrog\.com/ => "http://www.yfrog.com/api/oembed",
       /skitch\.com/ => 'http://skitch.com/oembed',
       /photobucket\.com/ => 'http://photobucket.com/oembed',
 
       # Rich
-      /slideshare/ => "http://www.slideshare.net/api/oembed/2",
+      /slideshare\.net/ => "http://www.slideshare.net/api/oembed/2",
       /twitter\.com/ => 'https://api.twitter.com/1/statuses/oembed.{format}',
       /scribd\.com/ => 'http://www.scribd.com/services/oembed',
       /kinomap\.com/ => 'http://www.kinomap.com/oembed',
@@ -51,11 +51,19 @@ module Oembedr
       /dipity\.com/ => 'http://www.dipity.com/oembed/timeline/',
       /sketchfab\.com\/show/ => 'http://sketchfab.com/oembed',
       /ifixit\.com/ => 'http://www.ifixit.com/Embed',
+
+      # NOTE:
+      #   When calling Oembedr#fetch set the `for` parameter with your ID
+      #   Example: { :params => {:for => 'oembedr.com'} }
       /(wordpress\.com|blogs\.cnn\.com|techcrunch\.com|wp\.me)/ =>
         'http://public-api.wordpress.com/oembed/1.0/',
 
       # NoEmbed
-      /(thedailyshow\.com|funnyordie\.com|ted\.com|livejournal\.com|github\.com|metacafe\.com|wikipedia\.org|xkcd\.com|imdb\.com)/ => 'http://noembed.com/embed?nowrap=on'
+      # NOTE:
+      #   When calling Oembedr#fetch set the `nowrap` parameter to avoid
+      #   noembed.com wrapper
+      #   Example: { :params => {:nowrap => 'on'} }
+      /(thedailyshow\.com|funnyordie\.com|ted\.com|livejournal\.com|github\.com|metacafe\.com|wikipedia\.org|xkcd\.com|imdb\.com)/ => 'http://noembed.com/embed'
     }
 
     # Locate the correct service endpoint for the given resource URL.
