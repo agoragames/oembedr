@@ -70,4 +70,4 @@ A big thanks to everyone who [contributes](https://github.com/agoragames/oembedr
 
 ## Copyright
 
-Copyright (c) 2012-2013 Matthew Wilson. MIT-license: see LICENSE.txt for further details.
+Copyright (c) 2012-2014 Matthew Wilson. MIT-license: see LICENSE.txt for further details.
