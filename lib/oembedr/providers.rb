@@ -23,6 +23,7 @@ module Oembedr
       /justin\.tv/ => 'http://api.justin.tv/api/embed/from_url.{format}',
       /wordpress\.tv/ => 'http://wordpress.tv/oembed/',
       /collegehumor\.com/ => 'http://www.collegehumor.com/oembed.{format}',
+      /(wistia\.com|wi\.st)/ => 'http://fast.wistia.com/oembed.{format}',
 
       # Audio
       /soundcloud\.com/ => 'http://soundcloud.com/oembed',
