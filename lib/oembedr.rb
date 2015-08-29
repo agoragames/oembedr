@@ -3,6 +3,7 @@ require "oembedr/configuration"
 require "oembedr/client"
 require "oembedr/providers"
 require "typhoeus"
+require "typhoeus/adapters/faraday"
 
 module Oembedr
   extend Configuration

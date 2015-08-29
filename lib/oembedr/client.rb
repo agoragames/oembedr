@@ -29,6 +29,7 @@ module Oembedr
         builder.use Faraday::Request::UrlEncoded
         builder.use Faraday::Response::ParseJson
         builder.use Faraday::Response::RaiseError
+        builder.use FaradayMiddleware::FollowRedirects
         builder.adapter Oembedr.adapter
       end
     end

@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
   # specify any dependencies here; for example:
   s.add_development_dependency "rspec"
   s.add_development_dependency "yajl-ruby"
-  s.add_development_dependency "vcr", "~> 2.0.0.rc1"
+  s.add_development_dependency "vcr"
   s.add_development_dependency "fakeweb"
   s.add_development_dependency "guard"
   s.add_development_dependency "guard-rspec"

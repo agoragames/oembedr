@@ -27,24 +27,29 @@ module Oembedr
         conn.host.should == "www.youtube.com"
       end
     end
-
-    use_vcr_cassette "client", :record => :new_episodes
-
     describe "#get" do
       it "requests data and parses that JSON" do
-        response = client.get
-        response.body["type"].should == "video"
-        response.body["html"].should_not be_empty
+        VCR.use_cassette "youtube_video" do
+          response = client.get
+          response.body["type"].should == "video"
+          response.body["html"].should_not be_empty
+        end
       end
+
       it "raises an appropriate error if there is a problem" do
-        client = Client.new("http://www.youtube.com/foobar?qq=12314332")
-        lambda { client.get }.should raise_error(Faraday::Error::ResourceNotFound)
+        VCR.use_cassette "youtube_video_not_found" do
+          client = Client.new("http://www.youtube.com/foobar?qq=12314332")
+          lambda { client.get }.should raise_error(Faraday::Error::ResourceNotFound)
+        end
       end
+
       it "passes through any additional parameters (e.g. size constraints)" do
-        client = Client.new("http://www.youtube.com/watch?v=Qi_AAqi0RZM")
-        response = client.get({:params => { :maxwidth => "150", :maxheight => "100" }})
-        response.body["width"].should <= 150
-        response.body["height"].should <= 100
+        VCR.use_cassette "youtube_video_with_parameters" do
+          client = Client.new("http://www.youtube.com/watch?v=9bZkp7q19f0")
+          response = client.get({:params => { :maxwidth => "200", :maxheight => "150" }})
+          response.body["width"].should <= 200
+          response.body["height"].should <= 150
+        end
       end
     end
 

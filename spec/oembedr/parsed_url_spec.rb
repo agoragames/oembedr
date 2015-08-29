@@ -20,7 +20,7 @@ module Oembedr
         parser.url.path.should == "/oembed"
       end
       it "is set to false if there is no known endpoint" do
-        trololo_parser.url.should be_false
+        trololo_parser.url.should be_falsey
       end
     end
 
@@ -30,7 +30,7 @@ module Oembedr
         complex_url_parser.host.should == "https://api.twitter.com"
       end
       it "returns false if there wasn't a valid URL" do
-        trololo_parser.host.should be_false
+        trololo_parser.host.should be_falsey
       end
     end
 
@@ -39,7 +39,7 @@ module Oembedr
         parser.path.should == "/oembed"
       end
       it "returns false if there wasn't a valid URL" do
-        trololo_parser.path.should be_false
+        trololo_parser.path.should be_falsey
       end
     end
 
