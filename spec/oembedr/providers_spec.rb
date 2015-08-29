@@ -15,7 +15,7 @@ module Oembedr
       context 'with an invalid url' do
         let(:test_url) { 'http://www.madeupdomainthatwedontsupportyet.com/foos/324' }
 
-        it { should be_false }
+        it { should be_falsey }
       end
     end
 
@@ -73,7 +73,7 @@ module Oembedr
         context "for #{url}, tests: #{ind}/#{Oembedr::Providers::LIST.count}" do
           let(:test_url) { url }
 
-          it { should be_true }
+          it { should be_truthy }
         end
       end
     end
